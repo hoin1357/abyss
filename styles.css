@@ -1,0 +1,33 @@
+:root {
+  color-scheme: dark;
+  --bg: #07090f;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(circle at center, #131a25 0%, var(--bg) 55%);
+  font-family: 'Courier New', monospace;
+}
+
+.app {
+  width: min(100vw, 432px);
+}
+
+canvas {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 2px solid #262d3b;
+  background: #000;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  touch-action: none;
+}
